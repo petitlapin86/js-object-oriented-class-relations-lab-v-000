@@ -1,17 +1,16 @@
 
-let store = {drivers: [], Passenger: [], Trip: []}
+let store = {drivers: [], passenger: [], Trip: []}
 // initialize STORE with key of items and users that each point to an empty array
 
 
 
-let driverId = 0
+let driverId = 0 //driver id starts at zero
 
 class Driver {
   constructor(name) {
-    this.id = ++driverId
-    this.name = name
-    //insert driver into STORE
-    store.drivers.push(this)
+    this.id = ++driverId //driver id adds 1 each new driver
+    this.name = name // stores drivers name
+    store.drivers.push(this) //insert drivers into STORE
   }
   newDriver(id, name){
     this.driverId = driver.id
@@ -36,7 +35,7 @@ class Passenger {
     this.id = ++userId
     this.name = name
     //insert Passenger into STORE
-    store.Passenger.push(this)
+    store.passenger.push(this)
   }
 }
 
