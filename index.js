@@ -37,6 +37,10 @@ class Passenger {
     //insert Passenger into STORE
     store.passengers.push(this)
   }
+  Trip(){
+   return store.Trip.filter((trip)=> {
+     return trip.passengerId == this.id
+   })
 }
 
 
