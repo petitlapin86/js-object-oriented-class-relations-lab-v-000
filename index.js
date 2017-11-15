@@ -1,5 +1,5 @@
 
-let store = {Driver: [], Passenger: [], Class: []}
+let store = {Driver: [], Passenger: [], Trip: []}
 // initialize STORE with key of items and users that each point to an empty array
 
 
