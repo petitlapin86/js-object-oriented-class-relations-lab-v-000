@@ -44,7 +44,7 @@ class Passenger {
 }
 drivers(){
   return this.Trip().map((trip)=> {
-    return trip.driver() // a passenger has many drivers this looks over drivers and returns the ones that match 
+    return trip.driver() // a passenger has many drivers this looks over drivers and returns the ones that match
   })
 }
 }
@@ -58,4 +58,7 @@ class Trip {
     this.id = ++tripId //trip id counts and adds 1 for each new trip
     store.trips.push(this)   //insert Trip into STORE
   }
+  driver(){
+   return store.drivers.find((driver) => { return driver.id === this.driverId })
+ }
 }
