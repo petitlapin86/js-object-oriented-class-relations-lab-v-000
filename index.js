@@ -13,6 +13,9 @@ class Driver {
     //insert driver into STORE
     store.Driver.push(this)
   }
+  newDriver(id, name){
+    this.userId = user.id
+  }
 }
 
 
