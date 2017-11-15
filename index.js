@@ -1,6 +1,6 @@
 
-let store = {Driver: [], Passenger: [], Class []}
-// initialize DRIVERS? with key of items and users that each point to an empty array
+let store = {Driver: [], Passenger: [], Class: []}
+// initialize STORE with key of items and users that each point to an empty array
 
 
 
@@ -10,7 +10,7 @@ class Driver {
   constructor(name) {
     this.id = ++userId
     this.name = name
-    //insert driver into DRIVER?
+    //insert driver into STORE
     store.Driver.push(this)
   }
 }
