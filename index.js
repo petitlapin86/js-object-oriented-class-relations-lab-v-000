@@ -27,7 +27,7 @@ passengers(){
    })//A DRIVER has many passengers, this filters over store and returns trips that match drivers id
 }
  }
-}
+
 
 
 
