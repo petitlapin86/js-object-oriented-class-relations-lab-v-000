@@ -6,26 +6,24 @@ let store = {drivers: [], passengers: [], trips: []}
 
 let driverId = 0 //driver id starts at zero
 
+let driverId = 0
 class Driver {
-  constructor(name) {
-    this.id = ++driverId //driver id adds 1 each new driver
-    this.name = name // stores drivers name
-    store.drivers.push(this) //insert drivers into STORE
+  constructor(name, zipcode){
+    this.name = name
+    this.id = ++driverId
+    store.drivers.push(this)
   }
-  newDriver(id, name){
-    this.driverId = driver.id
-  }
-  Trip(){
+  trips(){
     return store.trips.filter((trip)=> {
       return trip.driverId == this.id
-    }) //A DRIVER has many trips, this filters over store and returns trips that match drivers id
+    })
+  }
+  passengers(){
+    return this.trips().map((trip)=> {
+      return trip.passenger()
+    })
+  }
 }
-passengers(){
-   return this.Trip().map((trip)=> {
-     return trip.passenger()
-   })//A DRIVER has many passengers, this filters over store and returns trips that match drivers id
-}
- }
 
 let passengerId = 0 //passenger id starts at zero
 
