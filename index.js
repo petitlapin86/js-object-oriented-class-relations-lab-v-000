@@ -3,7 +3,7 @@ let store = {drivers: [], passengers: [], trips: []}
 
 let driverId = 0 //begins at zero
 class Driver { // define a class Driver
-  constructor(name){
+  constructor(name){ // takes one argument
     this.name = name
     this.id = ++driverId //counts adding one each new id number
     store.drivers.push(this) //pushes this info to the store array
@@ -43,7 +43,7 @@ class Passenger { // define a class Passenger
 
 let tripId = 0 // starts keeping track at zero
 class Trip { // define a class Trip
-  constructor(driver, passenger, startingZip, endingZip){
+  constructor(driver, passenger){
     this.driverId = driverId;
     this.passengerId = passengerId;
     this.id = ++tripId // counts and adds 1 for each new id
