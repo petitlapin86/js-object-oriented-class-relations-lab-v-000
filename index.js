@@ -43,17 +43,17 @@ class Passenger {
    })
 }
 drivers(){
-  return this.trips().map((trip)=> {
+  return this.Trip().map((trip)=> {
     return trip.driver()
   })
 }
 }
 
 
-
+let tripId = 0
 class Trip {
   constructor(name) {
-    this.id = ++driverId
+    this.id = ++tripId
     this.name = name
     //insert Trip into STORE
     store.trips.push(this)
