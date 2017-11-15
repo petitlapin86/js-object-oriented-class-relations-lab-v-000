@@ -20,7 +20,16 @@ class Passenger {
   constructor(name) {
     this.id = ++userId
     this.name = name
-    //insert driver into STORE
+    //insert Passenger into STORE
     store.Passenger.push(this)
+  }
+}
+
+class Class {
+  constructor(name) {
+    this.id = ++userId
+    this.name = name
+    //insert Class into STORE
+    store.Class.push(this)
   }
 }
