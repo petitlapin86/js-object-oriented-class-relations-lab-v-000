@@ -4,17 +4,17 @@ let store = {Driver: [], Passenger: [], Trip: []}
 
 
 
-let userId = 0
+let driverId = 0
 
 class Driver {
   constructor(name) {
-    this.id = ++userId
+    this.id = ++driverId
     this.name = name
     //insert driver into STORE
     store.Driver.push(this)
   }
   newDriver(id, name){
-    this.userId = user.id
+    this.driverId = driver.id
   }
 }
 
