@@ -21,6 +21,12 @@ class Driver {
       return trip.driverId == this.id
     }) //A DRIVER has many trips, this filters over store and returns trips that match drivers id
 }
+passengers(){
+   return this.Trip().map((trip)=> {
+     return trip.passenger()
+   })//A DRIVER has many passengers, this filters over store and returns trips that match drivers id
+}
+ }
 }
 
 
