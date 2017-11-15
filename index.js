@@ -25,11 +25,11 @@ class Passenger {
   }
 }
 
-class Class {
+class Trip {
   constructor(name) {
     this.id = ++userId
     this.name = name
-    //insert Class into STORE
-    store.Class.push(this)
+    //insert Trip into STORE
+    store.Trip.push(this)
   }
 }
