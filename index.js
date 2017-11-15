@@ -39,9 +39,11 @@ class Passenger {
   }
 }
 
+
+
 class Trip {
   constructor(name) {
-    this.id = ++userId
+    this.id = ++driverId
     this.name = name
     //insert Trip into STORE
     store.trips.push(this)
