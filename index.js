@@ -14,3 +14,13 @@ class Driver {
     store.Driver.push(this)
   }
 }
+
+
+class Passenger {
+  constructor(name) {
+    this.id = ++userId
+    this.name = name
+    //insert driver into STORE
+    store.Passenger.push(this)
+  }
+}
