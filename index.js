@@ -27,7 +27,7 @@ passengers(){
 }
  }
 
-let userId = 0 //passenger id starts at zero
+let passengerId = 0 //passenger id starts at zero
 
 
 class Passenger {
@@ -50,13 +50,12 @@ drivers(){
 }
 
 
-let tripId = 0
+let tripId = 0  //trip id starts at zero
 class Trip {
   constructor(driver, passenger, startingZip, endingZip) {
     this.driverId = driverId;
     this.passengerId = passengerId;
-    this.id = ++tripId
-    //insert Trip into STORE
-    store.trips.push(this)
+    this.id = ++tripId //trip id counts and adds 1 for each new trip
+    store.trips.push(this)   //insert Trip into STORE
   }
 }
