@@ -42,6 +42,7 @@ class Passenger {
      return trip.passengerId == this.id
    })
 }
+}
 
 
 
