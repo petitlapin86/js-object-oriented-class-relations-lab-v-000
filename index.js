@@ -16,7 +16,12 @@ class Driver {
   newDriver(id, name){
     this.driverId = driver.id
   }
+  trips(){
+    return store.trips.filter((trip)=> {
+      return trip.driverId == this.id
+    }) //A DRIVER has many trips, this filters over store and returns trips that match drivers id
 }
+
 
 
 class Passenger {
