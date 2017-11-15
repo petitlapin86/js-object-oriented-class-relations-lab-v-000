@@ -1,5 +1,5 @@
 
-let driver = {users: [], items: []}
+let drivers = {users: [], items: []}
 // initialize DRIVERS? with key of items and users that each point to an empty array
 
 
@@ -11,6 +11,6 @@ class Driver {
     this.id = ++userId
     this.name = name
     //insert driver into DRIVER?
-    driver.Driver.push(this)
+    drivers.Driver.push(this)
   }
 }
