@@ -27,7 +27,7 @@ passengers(){
 }
  }
 
-
+let userId = 0 //passenger id starts at zero
 
 
 class Passenger {
