@@ -40,11 +40,11 @@ class Passenger {
   Trip(){
    return store.Trip.filter((trip)=> {
      return trip.passengerId == this.id
-   })
+   }) // a passenger goes on many trips. this filters through trips and returns those that match
 }
 drivers(){
   return this.Trip().map((trip)=> {
-    return trip.driver()
+    return trip.driver() // a passenger has many drivers this looks over drivers and returns the ones that match 
   })
 }
 }
@@ -52,7 +52,7 @@ drivers(){
 
 let tripId = 0  //trip id starts at zero
 class Trip {
-  constructor(driver, passenger, startingZip, endingZip) {
+  constructor(Driver, Passenger, startingZip, endingZip) {
     this.driverId = driverId;
     this.passengerId = passengerId;
     this.id = ++tripId //trip id counts and adds 1 for each new trip
