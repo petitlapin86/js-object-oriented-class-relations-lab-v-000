@@ -32,7 +32,7 @@ let passengerId = 0 //passenger id starts at zero
 
 class Passenger {
   constructor(name) {
-    this.id = ++userId
+    this.id = ++passengerId
     this.name = name
     //insert Passenger into STORE
     store.passengers.push(this)
