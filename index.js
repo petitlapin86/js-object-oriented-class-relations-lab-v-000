@@ -16,7 +16,7 @@ class Driver {
     this.driverId = driver.id
   }
   Trip(){
-    return store.Trip.filter((trip)=> {
+    return store.trips.filter((trip)=> {
       return trip.driverId == this.id
     }) //A DRIVER has many trips, this filters over store and returns trips that match drivers id
 }
