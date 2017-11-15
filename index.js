@@ -21,6 +21,7 @@ class Driver {
       return Trip.driverId == this.id
     }) //A DRIVER has many trips, this filters over store and returns trips that match drivers id
 }
+}
 
 
 
