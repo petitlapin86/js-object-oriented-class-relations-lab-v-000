@@ -1,5 +1,5 @@
 
-let drivers = {users: [], items: []}
+let drivers = {Driver: [], Passenger: [], Class []}
 // initialize DRIVERS? with key of items and users that each point to an empty array
 
 
