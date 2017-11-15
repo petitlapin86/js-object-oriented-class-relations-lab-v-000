@@ -6,11 +6,11 @@ let driver = {users: [], items: []}
 
 let userId = 0
 
-class driver {
+class Driver {
   constructor(name) {
     this.id = ++userId
     this.name = name
     //insert driver into DRIVER?
-    driver.users.push(this)
+    driver.Driver.push(this)
   }
 }
