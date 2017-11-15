@@ -1,4 +1,7 @@
 
+let driver = {users: [], items: []}
+// initialize DRIVERS? with key of items and users that each point to an empty array
+
 
 
 let userId = 0
