@@ -52,9 +52,10 @@ drivers(){
 
 let tripId = 0
 class Trip {
-  constructor(name) {
+  constructor(driver, passenger, startingZip, endingZip) {
+    this.driverId = driverId;
+    this.passengerId = passengerId;
     this.id = ++tripId
-    this.name = name
     //insert Trip into STORE
     store.trips.push(this)
   }
