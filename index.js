@@ -60,5 +60,8 @@ class Trip {
   }
   driver(){
    return store.drivers.find((driver) => { return driver.id === this.driverId })
- }
+ } // a trip could have many different drivers this .find connects them
+ passenger(){
+   return store.passengers.find((passenger) => { return passenger.id === this.passengerId })
+ } // a trip can have many different passengers this .find connects them 
 }
