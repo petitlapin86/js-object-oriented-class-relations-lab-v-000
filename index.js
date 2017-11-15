@@ -1,5 +1,5 @@
 
-let store = {drivers: [], passengers: [], Trip: []}
+let store = {drivers: [], passengers: [], trips: []}
 // initialize STORE with key of items and users that each point to an empty array
 
 
@@ -44,6 +44,6 @@ class Trip {
     this.id = ++userId
     this.name = name
     //insert Trip into STORE
-    store.Trip.push(this)
+    store.trips.push(this)
   }
 }
